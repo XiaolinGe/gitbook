@@ -3,8 +3,8 @@
 * [Introduction](README.md)
 
 * [1. Java](Java/README.md)
-  * [1.1 Java](Java/section1.1.md)
-  * [1.2 Java](Java/section1.1.md)
+  * [Java](Java/section1.1.md)
+  * [Java](Java/section1.1.md)
   
   
 * [2. Kotlin](Kotlin/README.md)
@@ -26,11 +26,14 @@
   
   
 * [6. Server](Server/README.md)
-   * [1.1 Nginx](Server/1.1Nginx.md)
+   * [Nginx](Server/1.1Nginx.md)
+   
    
 * [7. DevOps](DevOps/README.md)
-   * [6.1 Docker](DevOps/Docker.md)
+   * [Docker](DevOps/Docker.md)
    
 
 * [8. Spring Boot](SpringBoot/README.md)
-   * [1.1 Lock](SpringBoot/section1.1.md)
+   * [Lock](SpringBoot/Lock.md)
+   * [Global Exception](SpringBoot/GlobalExceptionHandler.md)
+   * [Send Email](SpringBoot/SendEmail.md)
