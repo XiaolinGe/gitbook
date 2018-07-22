@@ -1,4 +1,4 @@
-# Send Email (统一异常处理)
+# Send Email 
 
 demo: spring-mvc-practice
 
