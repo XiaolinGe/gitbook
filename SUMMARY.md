@@ -21,7 +21,7 @@
   
   
 * [5. Database](Database/README.md)
-  * [Database](Database/Mysql.md)
+  * [Mysql](Database/Mysql.md)
   * [Redis](Database/Redis.md)
   
   
@@ -32,8 +32,13 @@
 * [7. DevOps](DevOps/README.md)
    * [Docker](DevOps/Docker.md)
    
+   
+* [8. Testing](Testing/README.md)
+   * [Gatling](Testing/Gatling.md)
+   * [JMH](Testing/JMH.md)
+   
 
-* [8. Spring Boot](SpringBoot/README.md)
+* [9. Spring Boot](SpringBoot/README.md)
    * [Lock](SpringBoot/Lock.md)
    * [Global Exception](SpringBoot/GlobalExceptionHandler.md)
    * [Send Email](SpringBoot/SendEmail.md)
