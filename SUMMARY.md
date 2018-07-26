@@ -42,6 +42,6 @@
    * [Internationalization](SpringBoot/Internationalization.md)
    * [Auditing](SpringBoot/Auditing.md)
    * [spring security](SpringBoot/SendEmail.md)
-   * [继承](SpringBoot/SendEmail.md)
+   * [Inheritance](SpringBoot/Inheritance.md)
    * [Transaction](SpringBoot/Transaction.md)
    * [AOP](SpringBoot/AOP.md)
