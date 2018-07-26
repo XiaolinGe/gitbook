@@ -248,3 +248,9 @@ class ProductService(
     }
 }
 ```
+
+
+### 参考
+
+发锁事务重试机制（JPA高并发下的乐观锁异常）总结，以及中间遇到各种问题和解决方案
+https://blog.csdn.net/zhanghongzheng3213/article/details/50819539

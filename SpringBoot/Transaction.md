@@ -223,3 +223,7 @@ ProductController.kt
 
 Spring Boot中的事务管理
 http://blog.didispace.com/springboottransactional/
+
+
+Programmatic Transaction Management Example in Spring
+https://www.jeejava.com/programmatic-transaction-management-example-in-spring/
