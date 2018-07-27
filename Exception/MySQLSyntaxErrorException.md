@@ -9,8 +9,6 @@ Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregate
 this is incompatible with sql_mode=only_full_group_by
 ```
 
-### Reason
-
 
 ### Reference
 

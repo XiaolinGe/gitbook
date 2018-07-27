@@ -20,6 +20,8 @@
   * [Spring Mvc Customize Validation](Exception/SpringMvcCustomizeValidation.md)
   * [JavassistLazyInitializer](Exception/JavassistLazyInitializer.md)
   * [MySQLSyntaxErrorException](Exception/MySQLSyntaxErrorException.md)
+  * [SQLException](Exception/SQLException.md)
+  * [InvalidDataAccessApiUsageException](Exception/InvalidDataAccessApiUsageException.md)
   
   
 * [5. Database](Database/README.md)
