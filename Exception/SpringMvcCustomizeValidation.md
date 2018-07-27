@@ -19,7 +19,6 @@ https://www.jianshu.com/p/4f0f6df12880
 
 ### Solution
 
-
 ```aidl
 import javax.validation.Constraint
 import javax.validation.ReportAsSingleViolation
