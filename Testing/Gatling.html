@@ -739,6 +739,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="gatling">Gatling</h1>
+<h3 id="demo">Demo</h3>
+<p><a href="https://github.com/XiaolinGe/gatling-test-tool" target="_blank">https://github.com/XiaolinGe/gatling-test-tool</a></p>
 <p>&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x6A21;&#x62DF;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x5E76;&#x751F;&#x6210;&#x62A5;&#x8868;</p>
 <h3 id="&#x5E94;&#x7528;">&#x5E94;&#x7528;</h3>
 <p>pom.xml</p>
@@ -750,7 +752,7 @@
                 &lt;version&gt;${gatling-plugin.version}&lt;/version&gt;
                 &lt;configuration&gt;
                     &lt;!-- &#x6D4B;&#x8BD5;&#x811A;&#x672C; --&gt;
-                      &lt;simulationClass&gt;com.anoyi.test.BuyProductTest&lt;/simulationClass&gt;
+                      &lt;simulationClass&gt;com.anoyi.test.ApiTest&lt;/simulationClass&gt;
                     &lt;!-- &#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5730;&#x5740; --&gt;
                     &lt;resultsFolder&gt;/Users/xiaolinge/Desktop/gatling&lt;/resultsFolder&gt;
                 &lt;/configuration&gt;
@@ -768,7 +770,7 @@ import io.gatling.http.Predef._
 
 import scala.concurrent.duration.{Duration, FiniteDuration}
 
-class BuyProductTest extends Simulation {
+class ApiTest extends Simulation {
 
   val scn: ScenarioBuilder = scenario(&quot;Rate&quot;)
     .repeat(5, &quot;n&quot;) {
@@ -831,7 +833,7 @@ class BuyProductTest extends Simulation {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gatling","level":"8.1.1","depth":2,"next":{"title":"JMH","level":"8.1.2","depth":2,"path":"Testing/JMH.md","ref":"Testing/JMH.md","articles":[]},"previous":{"title":"8. Testing","level":"8.1","depth":1,"path":"Testing/README.md","ref":"Testing/README.md","articles":[{"title":"Gatling","level":"8.1.1","depth":2,"path":"Testing/Gatling.md","ref":"Testing/Gatling.md","articles":[]},{"title":"JMH","level":"8.1.2","depth":2,"path":"Testing/JMH.md","ref":"Testing/JMH.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Testing/Gatling.md","mtime":"2018-07-26T03:58:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-27T04:24:55.414Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gatling","level":"8.1.1","depth":2,"next":{"title":"JMH","level":"8.1.2","depth":2,"path":"Testing/JMH.md","ref":"Testing/JMH.md","articles":[]},"previous":{"title":"8. Testing","level":"8.1","depth":1,"path":"Testing/README.md","ref":"Testing/README.md","articles":[{"title":"Gatling","level":"8.1.1","depth":2,"path":"Testing/Gatling.md","ref":"Testing/Gatling.md","articles":[]},{"title":"JMH","level":"8.1.2","depth":2,"path":"Testing/JMH.md","ref":"Testing/JMH.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Testing/Gatling.md","mtime":"2018-07-27T09:12:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-27T07:36:48.380Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
