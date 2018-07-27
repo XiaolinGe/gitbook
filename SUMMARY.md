@@ -17,7 +17,7 @@
   
   
 * [4. Exception](Exception/README.md)
-  * [Section1.1](Exception/section1.1.md)
+  * [Spring Mvc Customize Validation.md](Exception/SpringMvcCustomizeValidation.md)
   
   
 * [5. Database](Database/README.md)
