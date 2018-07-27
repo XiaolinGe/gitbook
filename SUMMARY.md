@@ -17,7 +17,8 @@
   
   
 * [4. Exception](Exception/README.md)
-  * [Spring Mvc Customize Validation.md](Exception/SpringMvcCustomizeValidation.md)
+  * [Spring Mvc Customize Validation](Exception/SpringMvcCustomizeValidation.md)
+  * [JavassistLazyInitializer](Exception/JavassistLazyInitializer.md)
   
   
 * [5. Database](Database/README.md)
