@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>4. Exception · GitBook</title>
+        <title>InvalidDataAccessApiUsageException · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SpringMvcCustomizeValidation.html" />
+    <link rel="next" href="XFrameOptions.html" />
     
     
-    <link rel="prev" href="../JS/section1.1.html" />
+    <link rel="prev" href="SQLException.html" />
     
 
     </head>
@@ -245,7 +245,7 @@
         
         
     
-        <li class="chapter active" data-level="4.1" data-path="./">
+        <li class="chapter " data-level="4.1" data-path="./">
             
                 <a href="./">
             
@@ -311,7 +311,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.5" data-path="InvalidDataAccessApiUsageException.html">
+        <li class="chapter active" data-level="4.1.5" data-path="InvalidDataAccessApiUsageException.html">
             
                 <a href="InvalidDataAccessApiUsageException.html">
             
@@ -723,7 +723,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >4. Exception</a>
+        <a href=".." >InvalidDataAccessApiUsageException</a>
     </h1>
 </div>
 
@@ -738,11 +738,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="exception">Exception</h1>
+                                <h1 id="invaliddataaccessapiusageexception">InvalidDataAccessApiUsageException</h1>
 <h3 id="exception">Exception</h3>
+<pre><code class="lang-aidl">InvalidDataAccessApiUsageException: Unknown name value [] for enum class [test.enums.PayeeStatusEnum]; nested exception is java.lang.IllegalArgumentException: Unknown name value [] for enum class [test.enums.PayeeStatusEnum]
+</code></pre>
 <h3 id="reason">Reason</h3>
+<p>&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684;&#x5BF9;&#x5E94;&#x7684;payee table &#x91CC;&#x7684;status &#x5B57;&#x6BB5;&#x503C;&#x662F;&#x7A7A;&#xFF0C;&#x7A7A;&#x4E0D;&#x80FD;&#x8F6C;&#x4E3A;Enum,&#x6240;&#x4EE5;&#x9700;&#x8981;&#x7ED9;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;payee &#x7684;status&#x52A0;&#x4E0A;Enum&#x5BF9;&#x5E94;&#x7684;&#x503C;</p>
 <h3 id="solution">Solution</h3>
-<h3 id="reference">Reference</h3>
+<p>&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684;&#x5BF9;&#x5E94;&#x7684;payee table &#x91CC;&#x7684;status &#x5B57;&#x6BB5;&#x503C;&#x52A0;&#x4E0A;&#x9700;&#x8981;&#x7684;Enum&#x7684;&#x503C;</p>
 
                                 
                                 </section>
@@ -770,12 +773,12 @@
 
             
                 
-                <a href="../JS/section1.1.html" class="navigation navigation-prev " aria-label="Previous page: Section1.1">
+                <a href="SQLException.html" class="navigation navigation-prev " aria-label="Previous page: SQLException">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="SpringMvcCustomizeValidation.html" class="navigation navigation-next " aria-label="Next page: Spring Mvc Customize Validation">
+                <a href="XFrameOptions.html" class="navigation navigation-next " aria-label="Next page: X-Frame-Options">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -786,7 +789,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. Exception","level":"4.1","depth":1,"next":{"title":"Spring Mvc Customize Validation","level":"4.1.1","depth":2,"path":"Exception/SpringMvcCustomizeValidation.md","ref":"Exception/SpringMvcCustomizeValidation.md","articles":[]},"previous":{"title":"Section1.1","level":"3.1.1","depth":2,"path":"JS/section1.1.md","ref":"JS/section1.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Exception/README.md","mtime":"2018-07-27T05:04:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-27T04:24:55.414Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"InvalidDataAccessApiUsageException","level":"4.1.5","depth":2,"next":{"title":"X-Frame-Options","level":"4.1.6","depth":2,"path":"Exception/XFrameOptions.md","ref":"Exception/XFrameOptions.md","articles":[]},"previous":{"title":"SQLException","level":"4.1.4","depth":2,"path":"Exception/SQLException.md","ref":"Exception/SQLException.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Exception/InvalidDataAccessApiUsageException.md","mtime":"2018-07-27T05:04:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-27T04:24:55.414Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
