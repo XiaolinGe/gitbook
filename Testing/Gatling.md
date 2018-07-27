@@ -1,5 +1,9 @@
 # Gatling
 
+### Demo
+
+https://github.com/XiaolinGe/gatling-test-tool
+
 性能测试工具，可模拟高并发，并生成报表
 
 ### 应用
@@ -15,7 +19,7 @@ pom.xml
                 <version>${gatling-plugin.version}</version>
                 <configuration>
                     <!-- 测试脚本 -->
-                      <simulationClass>com.anoyi.test.BuyProductTest</simulationClass>
+                      <simulationClass>com.anoyi.test.ApiTest</simulationClass>
                     <!-- 结果输出地址 -->
                     <resultsFolder>/Users/xiaolinge/Desktop/gatling</resultsFolder>
                 </configuration>
@@ -35,7 +39,7 @@ import io.gatling.http.Predef._
 
 import scala.concurrent.duration.{Duration, FiniteDuration}
 
-class BuyProductTest extends Simulation {
+class ApiTest extends Simulation {
 
   val scn: ScenarioBuilder = scenario("Rate")
     .repeat(5, "n") {
