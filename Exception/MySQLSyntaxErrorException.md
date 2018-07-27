@@ -10,15 +10,6 @@ this is incompatible with sql_mode=only_full_group_by
 ```
 
 
-### Reference
-
-https://stackoverflow.com/questions/10757169/mysql-my-cnf-location-on-os-x
-
-By default, the OS X installation does not use a my.cnf, and MySQL just uses the default values. To set up your own my.cnf, you could just create a file straight in /etc.
-OS X provides example configuration files at /usr/local/mysql/support-files/.
-
-
-
 ### Solution
 
 disable permanently error sql_mode=only_full_group_by do those steps:
@@ -46,4 +37,14 @@ sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_
 7.  重启MySQL： brew services restart mysql
   
 8.  check sql_mode是否改过来：mysql> SELECT @@sql_mode;
+
+
+
+
+### Reference
+
+https://stackoverflow.com/questions/10757169/mysql-my-cnf-location-on-os-x
+
+By default, the OS X installation does not use a my.cnf, and MySQL just uses the default values. To set up your own my.cnf, you could just create a file straight in /etc.
+OS X provides example configuration files at /usr/local/mysql/support-files/.
 

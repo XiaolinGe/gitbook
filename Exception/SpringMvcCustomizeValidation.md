@@ -10,13 +10,6 @@ HV000030: No validator could be found for constraint 'com.spring.mvc.validator.C
 
 @Constraint 没有配置validatedBy：  @Constraint(validatedBy = [ContactNumberValidator::class])
 
-### Reference
-
-https://blog.csdn.net/hanchao5272/article/details/79090765
-
-https://www.jianshu.com/p/4f0f6df12880
-
-
 ### Solution
 
 
@@ -40,4 +33,10 @@ annotation class ContactNumberConstraint(
 )
 ```
 
-*** test script
+
+### Reference
+
+https://blog.csdn.net/hanchao5272/article/details/79090765
+
+https://www.jianshu.com/p/4f0f6df12880
+
