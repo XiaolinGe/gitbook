@@ -23,6 +23,7 @@
   * [SQLException](Exception/SQLException.md)
   * [InvalidDataAccessApiUsageException](Exception/InvalidDataAccessApiUsageException.md)
   * [X-Frame-Options](Exception/XFrameOptions.md)
+  * [HibernateExceptionIdentifier](Exception/HibernateExceptionIdentifier.md)
   
   
 * [5. Database](Database/README.md)
