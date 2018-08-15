@@ -100,6 +100,21 @@ org.hibernate.HibernateException: identifier of an instance of com.spring.mvc.be
 
 
 ### Reason
+
+```aidl
+
+import org.apache.commons.beanutils.BeanUtils
+
+    @PostMapping("/update")
+    fun update(@RequestParam(required = false) id: Int?, @RequestBody beneficiary: Beneficiary): String {
+        var old = beneficiaryDao.findOne(id)
+        old.bbas = beneficiary.bbas
+        BeanUtils.copyProperties(old, beneficiary)
+        beneficiaryDao.save(old)
+        return "update successful"
+    }
+```
+
 update 的对象 Beneficiary 主键 id 为 null, 原因是因为 BeanUtils.copyProperties convert id Int as null !!
 
 

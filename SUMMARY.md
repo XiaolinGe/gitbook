@@ -56,3 +56,7 @@
    * [Inheritance](SpringBoot/Inheritance.md)
    * [Transaction](SpringBoot/Transaction.md)
    * [AOP](SpringBoot/AOP.md)
+
+
+* [10. JPA](JPA/README.md)
+   * [Cascade](JPA/Cascade.md)
