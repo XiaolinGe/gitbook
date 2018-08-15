@@ -60,3 +60,4 @@
 
 * [10. JPA](JPA/README.md)
    * [Cascade](JPA/Cascade.md)
+   * [FetchType](JPA/FetchType.md)
