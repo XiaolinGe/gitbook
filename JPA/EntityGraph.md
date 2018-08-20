@@ -1,8 +1,15 @@
-# FetchType 
+# EntityGraph 
+
+JPA效率优化
 
 demo: spring-mvc-practice
 
 ### 定义
+
+
+##### NameEntityGraph
+
+这是JPA2.1的新特性，其主要作用是来设置懒加载需要加载的关联对象，并且支持多层关联，比如 payee.pba[1].bankOwners ,来获取一个 payee 的某个 payee bank account 的 bank owners 所能访问的页面。
 
 
 在 Dao 配置 @EntityGraph 
