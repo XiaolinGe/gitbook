@@ -136,7 +136,8 @@ PayeeController.kt
 ```aidl
     @GetMapping
     fun get(@RequestParam(required = false) id: Int?, model: ModelMap): String {
-        payeeDao.findOne(id)
+        val payee = payeeDao.findOne(id)
+        val owner = payee.pba[1].bankOwners[0].name
         return "get successful"
     }
 ```
