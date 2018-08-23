@@ -49,11 +49,11 @@ import javax.persistence.*
 
 @Entity
 @NamedEntityGraph(
-        name = "payee.all",
+        name = "payeeAll",
         attributeNodes = [(NamedAttributeNode(value = "pba",
-                subgraph = "bankOwners"))],
+                subgraph = "payeeBankAccountAll"))],
         subgraphs = [
-            NamedSubgraph(name = "bankOwners",//一层延伸
+            NamedSubgraph(name = "payeeBankAccountAll",//一层延伸
                     attributeNodes = [NamedAttributeNode("bankOwners")])
         ]
 )
@@ -69,6 +69,26 @@ class Payee : BaseEntity(), Serializable {
 ```
 
 
+
+PayeeController.kt
+```aidl
+    @GetMapping("test")
+    fun test(@RequestParam(required = false) id: Int?, items: String?, model: ModelMap): String {
+        
+        
+        val hints = HashMap<String, Any>()
+        hints["javax.persistence.fetchgraph"] = entityManager.getEntityGraph("payeeAll")
+        val payee = entityManager.find(Payee::class.java, id, hints)
+
+        val bankOwner = payee.pba[1].bankOwners
+
+        val bankOwner2 = payee.pba[0].bankOwners
+        return "test successful"
+    }
+        
+```
+
+
 PayeeDao.kt  (@EntityGraph)
 ```aidl
 package com.spring.mvc.dao
@@ -80,7 +100,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface PayeeDao : JpaRepository<Payee, Int> {
-    @EntityGraph(value="payee.all",type= EntityGraph.EntityGraphType.FETCH) // EntityGraph 
+   // @EntityGraph(value="payee.all",type= EntityGraph.EntityGraphType.FETCH) // EntityGraph 
     override fun findOne(id: Int?): Payee
 }
 ```
@@ -132,16 +152,6 @@ class BankOwner: BaseEntity(), Serializable {
 }
 ```
 
-PayeeController.kt
-```aidl
-    @GetMapping
-    fun get(@RequestParam(required = false) id: Int?, model: ModelMap): String {
-        val payee = payeeDao.findOne(id)
-        val owner = payee.pba[1].bankOwners[0].name
-        return "get successful"
-    }
-```
-
 
 http://localhost:8080/payee?id=1
 
@@ -160,3 +170,11 @@ https://blog.csdn.net/dalangzhonghangxing/article/details/56680629
 jpa抓取策略详解fetch(lazy ,eager)
 
 http://sefcertyu.iteye.com/blog/477775
+
+JPA 处理 N+1 问题的办法
+
+https://www.mingzhe.org/blog/2017/06/20/solve-n-plus-1-problems-using-hibernate/
+
+JPA 2.1 Entity Graph : Part 2- Define lazy/eager loading at runtime
+
+https://www.thoughts-on-java.org/jpa-21-entity-graph-part-2-define/

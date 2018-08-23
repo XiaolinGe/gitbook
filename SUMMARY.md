@@ -62,3 +62,4 @@
    * [Cascade](JPA/Cascade.md)
    * [FetchType](JPA/FetchType.md)
    * [EntityGraph](JPA/EntityGraph.md)
+   * [DynamicEntityGraph](JPA/DynamicEntityGraph.md)
