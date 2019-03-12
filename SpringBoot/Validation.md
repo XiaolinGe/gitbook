@@ -2,7 +2,6 @@
 
 demo: spring-mvc-practice
 
-### SendEmail.md
 
 pring提供了非常好用的JavaMailSender接口实现邮件发送。在Spring Boot的Starter模块中也为此提供了自动化配置。下面通过实例看看如何在Spring Boot中使用JavaMailSender发送邮件。
 
