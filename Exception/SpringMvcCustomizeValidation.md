@@ -12,7 +12,6 @@ HV000030: No validator could be found for constraint 'com.spring.mvc.validator.C
 
 ### Solution
 
-
 ```aidl
 import javax.validation.Constraint
 import javax.validation.ReportAsSingleViolation
