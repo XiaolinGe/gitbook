@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>BigDecimal · GitBook</title>
+        <title>Sass · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../JS/" />
+    <link rel="next" href="Email.html" />
     
     
-    <link rel="prev" href="section1.1.md" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -154,9 +154,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="./">
+        <li class="chapter " data-level="2.1" data-path="../Kotlin/">
             
-                <a href="./">
+                <a href="../Kotlin/">
             
                     
                     2. Kotlin
@@ -168,7 +168,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="section1.1.md">
+        <li class="chapter " data-level="2.1.1" data-path="../Kotlin/section1.1.md">
             
                 <span>
             
@@ -181,9 +181,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.2" data-path="BigDecimal.html">
+        <li class="chapter " data-level="2.1.2" data-path="../Kotlin/BigDecimal.html">
             
-                <a href="BigDecimal.html">
+                <a href="../Kotlin/BigDecimal.html">
             
                     
                     BigDecimal
@@ -791,9 +791,9 @@
         
         
     
-        <li class="chapter " data-level="11.1" data-path="../FrontEnd/">
+        <li class="chapter " data-level="11.1" data-path="./">
             
-                <a href="../FrontEnd/">
+                <a href="./">
             
                     
                     11. Front-End
@@ -805,9 +805,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.1.1" data-path="../FrontEnd/Sass.html">
+        <li class="chapter active" data-level="11.1.1" data-path="Sass.html">
             
-                <a href="../FrontEnd/Sass.html">
+                <a href="Sass.html">
             
                     
                     Sass
@@ -818,9 +818,9 @@
             
         </li>
     
-        <li class="chapter " data-level="11.1.2" data-path="../FrontEnd/Email.html">
+        <li class="chapter " data-level="11.1.2" data-path="Email.html">
             
-                <a href="../FrontEnd/Email.html">
+                <a href="Email.html">
             
                     
                     Email
@@ -866,7 +866,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >BigDecimal</a>
+        <a href=".." >Sass</a>
     </h1>
 </div>
 
@@ -881,19 +881,86 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="bigdecimal-&#x5E38;&#x89C1;&#x7528;&#x6CD5;">BigDecimal &#x5E38;&#x89C1;&#x7528;&#x6CD5;</h1>
-<h2 id="double-&#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x70B9;&#x56DB;&#x4F4D;&#xFF0C;&#x56DB;&#x820D;&#x4E94;&#x5165;">Double &#x4FDD;&#x7559;&#x5C0F;&#x6570;&#x70B9;&#x56DB;&#x4F4D;&#xFF0C;&#x56DB;&#x820D;&#x4E94;&#x5165;</h2>
-<pre><code>(55555!!.toDouble() / 100).doubleFormat2()
+                                <h1 id="sass">Sass</h1>
+<h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3>
+<h5 id="install-sass">Install sass</h5>
+<blockquote>
+<p>npm install -g sass</p>
+</blockquote>
+<h5 id="sass&#x76D1;&#x542C;-&#x81EA;&#x52A8;&#x751F;&#x6210;">SASS&#x76D1;&#x542C;, &#x81EA;&#x52A8;&#x751F;&#x6210;</h5>
+<p>watch a file / directory</p>
+<blockquote>
+<p>sass --watch input.scss:output.css</p>
+<p>sass --watch app/sass:public/stylesheets</p>
+</blockquote>
+<h3 id="&#x5E94;&#x7528;">&#x5E94;&#x7528;</h3>
+<pre><code class="lang-aidl">@import &quot;./test.scss&quot;;
 
-private fun Double.doubleFormat2(): String = DecimalFormat(&quot;#.00&quot;).format(this)
+$blue: #1875e7;
+$side: left;
+$var: 100px;
+$color: #ffd49b;
 
-private fun Double.doubleFormat4(): String = DecimalFormat(&quot;#.0000&quot;).format(this)
-</code></pre><h2 id="double-round-up-keep-2-digit-&#x7CBE;&#x786E;&#x8BA1;&#x7B97;">Double round up keep 2 digit &#x7CBE;&#x786E;&#x8BA1;&#x7B97;</h2>
-<pre><code>wallet.availableAmount = BigDecimal(wallet.availableAmount).plus(BigDecimal(walletDetail.amount)).setScale(2, BigDecimal.ROUND_HALF_UP).toDouble()
-</code></pre><h2 id="double-&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;-&#x8F6C;&#x4E3A;-&#x6570;&#x5B57;&#x663E;&#x793A;&#xFF0C;-double-to-bigdecimal-to-string">Double &#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5; &#x8F6C;&#x4E3A; &#x6570;&#x5B57;&#x663E;&#x793A;&#xFF0C; Double to BigDecimal to String</h2>
-<pre><code>BigDecimal(doubleAmount.toString()).toString()
-// Kotlin &#x4E2D;&#x7684;Double&#x662F;&#x7528;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x663E;&#x793A;&#xFF0C;&#x5373; 1.2345E, &#x4E0A;&#x9762;&#x4E3A;&#x5C06;&#x5176;&#x7528;&#x6570;&#x5B57;&#x65B9;&#x5F0F;&#x663E;&#x793A;
+@mixin left {
+  float: left;
+  margin-left: 10px;
+}
+
+div.left {
+  @include left;
+}
+
+body {
+  margin: (14px/2);
+  top: 50px + 100px;
+  right: $var * 10%;
+  div {
+    color: $blue;
+    background: pink;
+  }
+
+}
+
+.rounded {
+  border-#{$side}-radius: 5px;
+}
+
+a {
+  &amp;:hover {
+    color: #ffb3ff;
+  }
+}
+
+.class1 {
+  border: 1px solid #ddd;
+}
+
+.class2 {
+  @extend .class1;
+  font-size: 120%;
+}
+
+@mixin rounded($vert, $horz, $radius: 10px) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+  -moz-border-radius-#{$vert}#{$horz}: $radius;
+  -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+#nav-bar li {
+  @include rounded(top, left);
+}
+
+#footer {
+  @include rounded(top, left, 5px);
+}
+
+@if lightness($color) &gt; 30% {
+  background-color: #000;
+} @else {
+  background-color: #fff;
+}
 </code></pre>
+
                                 
                                 </section>
                             
@@ -920,12 +987,12 @@ private fun Double.doubleFormat4(): String = DecimalFormat(&quot;#.0000&quot;).f
 
             
                 
-                <a href="section1.1.md" class="navigation navigation-prev " aria-label="Previous page: Section1.1">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 11. Front-End">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../JS/" class="navigation navigation-next " aria-label="Next page: 3. JS">
+                <a href="Email.html" class="navigation navigation-next " aria-label="Next page: Email">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -936,7 +1003,7 @@ private fun Double.doubleFormat4(): String = DecimalFormat(&quot;#.0000&quot;).f
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"BigDecimal","level":"2.1.2","depth":2,"next":{"title":"3. JS","level":"3.1","depth":1,"path":"JS/README.md","ref":"JS/README.md","articles":[{"title":"Section1.1","level":"3.1.1","depth":2,"path":"JS/section1.1.md","ref":"JS/section1.1.md","articles":[]}]},"previous":{"title":"Section1.1","level":"2.1.1","depth":2,"path":"Kotlin/section1.1.md","ref":"Kotlin/section1.1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kotlin/BigDecimal.md","mtime":"2018-04-10T02:45:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-14T04:42:53.137Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sass","level":"11.1.1","depth":2,"next":{"title":"Email","level":"11.1.2","depth":2,"path":"FrontEnd/Email.md","ref":"FrontEnd/Email.md","articles":[]},"previous":{"title":"11. Front-End","level":"11.1","depth":1,"path":"FrontEnd/README.md","ref":"FrontEnd/README.md","articles":[{"title":"Sass","level":"11.1.1","depth":2,"path":"FrontEnd/Sass.md","ref":"FrontEnd/Sass.md","articles":[]},{"title":"Email","level":"11.1.2","depth":2,"path":"FrontEnd/Email.md","ref":"FrontEnd/Email.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FrontEnd/Sass.md","mtime":"2019-03-14T04:39:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-14T04:42:53.137Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
